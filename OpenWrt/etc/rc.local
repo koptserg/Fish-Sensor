@@ -1,0 +1,19 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+echo 41 > /sys/class/gpio/export 
+echo out > /sys/class/gpio/gpio41/direction
+echo 1 > /sys/class/gpio/gpio41/value
+sleep 1
+echo 0 > /sys/class/gpio/gpio41/value
+echo 39 > /sys/class/gpio/export 
+echo out > /sys/class/gpio/gpio39/direction
+echo 1 > /sys/class/gpio/gpio39/value
+sleep 1
+echo 0 > /sys/class/gpio/gpio39/value
+echo 42 > /sys/class/gpio/export 
+echo out > /sys/class/gpio/gpio42/direction
+echo 1 > /sys/class/gpio/gpio42value
+sleep 1
+echo 0 > /sys/class/gpio/gpio42value
+
+exit 0
