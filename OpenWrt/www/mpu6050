@@ -1,0 +1,8 @@
+FILE=/tmp/mpu6050.txt
+TMP_FILE=/tmp/mpu6050.tmp
+s=0
+ntail=20
+ndelta=19
+cdelta=10
+sound=1
+volume=10
